@@ -11,18 +11,18 @@
 </head>
 <body>
 <div class="container my-5">
-    <h2 class="mb-5">New Habitat</h2>
+    <h2 class="mb-5">Novo Habitat</h2>
     <div class="row">
         <div class="col-md-6">
             <form action="#" th:action="@{/addHabitat}" th:object="${habitat}" method="post">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="name" class="col-form-label">Name</label>
-                        <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
+                        <label for="name" class="col-form-label">Nome</label>
+                        <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Nome">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="area" class="col-form-label">Area (m2)</label>
-                        <input type="number" th:field="*{area}" class="form-control" id="area" placeholder="Area">
+                        <label for="area" class="col-form-label">Área (m2)</label>
+                        <input type="number" th:field="*{area}" class="form-control" id="area" placeholder="Área">
                     </div>
 
                     <div class="form-group col-md-6">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 mt-5">
-                        <input type="submit" class="btn btn-primary" value="Add Habitat 🌲🌲">
+                        <input type="submit" class="btn btn-primary" value="Adicionar Habitat">
                     </div>
                 </div>
             </form>

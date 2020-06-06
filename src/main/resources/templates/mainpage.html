@@ -15,16 +15,16 @@
     </style>
 </head>
 <body>
-Main Page
+Página Principal
 <form action="#" th:action="@{/animalspage}" th:object="${mainpage}" method="post">
     <!--    <a href="/animalspage"><img th:src="@{images/animal.png}" width="300" height="200"></a>-->
-    <input type="submit" th:src="@{images/animal.png}" value="Animals">
+    <input type="submit" th:src="@{images/animal.png}" value="Animais">
 </form>
 <form action="#" th:action="@{/habitatspage}" th:object="${habitatspage}" method="post">
     <input type="submit" value="Habitats">
 </form>
 <form action="#" th:action="@{/attendantspage}" th:object="${attendantspage}" method="post">
-    <input type="submit" value="Attendants">
+    <input type="submit" value="Funcionários">
 </form>
 
 </body>

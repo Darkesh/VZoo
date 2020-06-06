@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <title>Attendants Management</title>
+    <title>Gestão de Funcionários</title>
 </head>
 <body>
 <div th:switch="${attendants}">
-    <h2 th:case="null">No Attendants yet!</h2>
-    <h2 th:case="*">I have some Attendants!</h2>
+    <h2 th:case="null">Ainda não existem Funcionários</h2>
+    <h2 th:case="*">Já existem Funcionários</h2>
 </div>
 <table>
     <thead>
     <tr>
-        <th>Name</th>
+        <th>Nome</th>
         <th>E-mail</th>
     </tr>
     </thead>
@@ -22,6 +22,6 @@
     </tr>
     </tbody>
 </table>
-<p><a href="/createAttendants">Create Attendants Model</a></p>
+<p><a href="/createAttendants">Criar modelo de Funcionários</a></p>
 </body>
 </html>

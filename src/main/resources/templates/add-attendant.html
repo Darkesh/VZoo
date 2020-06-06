@@ -2,14 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Add a new Attendant</title>
+    <title>Adicionar novo Funcionário</title>
 </head>
 <body>
-<h2>New Attendant</h2>
+<h2>Novo Funcionário</h2>
 <form action="#" th:action="@{/addAttendant}" th:object="${attendant}" method="post">
-    <input type="text" th:field="*{name}" id="name" placeholder="Insert name here">
-    <input type="email" th:field="*{email}" id="email" placeholder="Insert e-mail here">
-    <input type="submit" value="Add a New Attendant!">
+    <input type="text" th:field="*{name}" id="name" placeholder="Inserir nome aqui">
+    <input type="email" th:field="*{email}" id="email" placeholder="Inserir e-mail aqui">
+    <input type="submit" value="Adicionar novo Funcionário!">
 </form>
 </body>
 </html>
