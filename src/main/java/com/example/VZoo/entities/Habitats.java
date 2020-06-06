@@ -25,7 +25,7 @@ public class Habitats {
         this.area = area;
     }
 
-    public List<Animais> getAnimals() {
+    public List<Animais> getAnimais() {
         return animals;
     }
 
