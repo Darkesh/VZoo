@@ -5,44 +5,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Habitats {
+public class Habitat {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
 
-    private String nome;
+    private String name;
     private String avatar;
     private int area;
 
     @OneToMany
-    private List<Animais> animals = new ArrayList<Animais>();
+    private List<com.example.VZoo.entities.Animal> animals = new ArrayList<com.example.VZoo.entities.Animal>();
 
-    public Habitats() { }
+    public Habitat() { }
 
-    public Habitats(String nome, int area) {
-        this.nome = nome;
+    public Habitat(String name, int area) {
+        this.name = name;
         this.area = area;
     }
 
-    public List<Animais> getAnimais() {
+    public List<com.example.VZoo.entities.Animal> getAnimals() {
         return animals;
     }
 
-    public void setAnimals(List<Animais> animals) {
+    public void setAnimals(List<com.example.VZoo.entities.Animal> animals) {
         this.animals = animals;
     }
 
-    public void addAnimal(Animais animal) {
+    public void addAnimal(com.example.VZoo.entities.Animal animal) {
         this.animals.add(animal);
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getAvatar() {
@@ -51,6 +43,14 @@ public class Habitats {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getArea() {
