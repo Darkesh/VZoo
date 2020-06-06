@@ -3,13 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Adicionar novo Funcionário</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: orange;
+      color: white;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: orange;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #ffa366;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
 </head>
 <body>
+<div class="topnav">
+    <a th:href="@{/mainpage}">Página Principal</a>
+    <a th:href="@{/animalspage}">Animais</a>
+    <a th:href="@{/habitatspage}">Habitats</a>
+    <a class="active" th:href="@{/attendantspage}">Funcionários</a>
+</div>
 <h2>Novo Funcionário</h2>
-<form action="#" th:action="@{/addAttendant}" th:object="${attendant}" method="post">
-    <input type="text" th:field="*{name}" id="name" placeholder="Inserir nome aqui">
-    <input type="email" th:field="*{email}" id="email" placeholder="Inserir e-mail aqui">
-    <input type="submit" value="Adicionar novo Funcionário!">
-</form>
+<div class="container">
+    <form action="#" th:action="@{/addAttendant}" th:object="${attendant}" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" th:field="*{name}" id="name" placeholder="Inserir nome aqui">
+        <label for="mail">E-mail</label>
+        <input type="email" th:field="*{email}" id="email" placeholder="Inserir e-mail aqui">
+        <input type="submit" value="Adicionar novo Funcionário">
+    </form>
+</div>
 </body>
 </html>
