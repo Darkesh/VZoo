@@ -1,4 +1,4 @@
-package com.example.VZoo.repositories;
+package com.example.VZoo;
 
 public class FuncionariosController {
 }

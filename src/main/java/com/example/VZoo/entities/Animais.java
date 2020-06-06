@@ -1,6 +1,6 @@
 package com.example.VZoo.entities;
 
-import com.example.VZoo.repositories.Satisfacao;
+import com.example.VZoo.Satisfacao;
 
 import javax.persistence.*;
 import java.util.ArrayList;

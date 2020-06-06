@@ -1,4 +1,4 @@
-package com.example.VZoo.repositories;
+package com.example.VZoo;
 
 import com.example.VZoo.entities.Animais;
 import com.example.VZoo.entities.Habitats;
