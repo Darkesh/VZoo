@@ -23,12 +23,14 @@ public class AnimalsPageController {
     @GetMapping("/animalspage")
     public String animals(Model model)
     {
+        model.addAttribute("animals", animalRepository.findAll());
         return "animalspage";
     }
 
     @PostMapping("/animalspage")
     public String goToAnimals(Model model)
     {
+        model.addAttribute("animals", animalRepository.findAll());
         return "animalspage";
     }
 

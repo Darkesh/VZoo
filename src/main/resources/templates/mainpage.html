@@ -2,7 +2,7 @@
 <html xmlns:th="https://www.thymeleaf.org">
 
 <head>
-    <title>Hello World</title>
+    <title>Página Principal</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <style>
@@ -64,7 +64,7 @@
 <body>
 
 <div class="topnav">
-    <a class="active" href="@{/mainpage}">Página Principal</a>
+    <a class="active" th:href="@{/mainpage}">Página Principal</a>
     <a th:href="@{/animalspage}">Animais</a>
     <a th:href="@{/habitatspage}">Habitats</a>
     <a th:href="@{/attendantspage}">Funcionários</a>

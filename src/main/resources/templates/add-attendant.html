@@ -73,7 +73,7 @@
 </div>
 <h2>Novo Funcionário</h2>
 <div class="container">
-    <form action="#" th:action="@{/addAttendant}" th:object="${attendant}" method="post">
+    <form action="#" th:action="@{/addAttendant}" th:object="${attendant}" method="post" name="Form" onsubmit="return validateForm()">
         <label for="nome">Nome</label>
         <input type="text" th:field="*{name}" id="name" placeholder="Inserir nome aqui">
         <label for="mail">E-mail</label>

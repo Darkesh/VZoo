@@ -67,8 +67,8 @@
     <a class="active" th:href="@{/attendantspage}">Funcionários</a>
 </div>
 <div th:switch="${attendants}">
-    <h2 th:case="null">Ainda não existem Funcionários</h2>
-    <h2 th:case="*">Já existem Funcionários</h2>
+    <h2 th:case="null">Funcionários</h2>
+    <h2 th:case="*">Funcionários</h2>
 </div>
 <table>
     <thead>

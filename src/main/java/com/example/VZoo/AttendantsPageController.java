@@ -38,12 +38,14 @@ public class AttendantsPageController {
     @GetMapping("/attendantspage")
     public String attendants(Model model)
     {
+        model.addAttribute("attendants", attendantRepository.findAll());
         return "attendantspage";
     }
 
     @PostMapping("/attendantspage")
     public String goToAnimals(Model model)
     {
+        model.addAttribute("attendants", attendantRepository.findAll());
         return "attendantspage";
     }
 }

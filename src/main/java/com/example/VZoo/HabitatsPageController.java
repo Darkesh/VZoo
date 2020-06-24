@@ -65,12 +65,14 @@ public class HabitatsPageController {
     @GetMapping("/habitatspage")
     public String habitats(Model model)
     {
+        model.addAttribute("habitats", habitatRepository.findAll());
         return "habitatspage";
     }
 
     @PostMapping("/habitatspage")
     public String goToHabitats(Model model)
     {
+        model.addAttribute("habitats", habitatRepository.findAll());
         return "habitatspage";
     }
 }
